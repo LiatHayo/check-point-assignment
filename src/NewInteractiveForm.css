@@ -1,0 +1,71 @@
+.NewInteractiveForm {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid lightgray;
+}
+
+.NewInteractiveForm label {
+  min-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.NewInteractiveForm input {
+  flex-grow: 1;
+  border: none;
+  /* background: rgb(232, 240, 254); */
+  padding: 0 1.5em;
+  font-size: initial;
+  outline: none;
+}
+
+.NewInteractiveForm input:placeholder-shown {
+  font-style: italic;
+}
+
+.NewInteractiveForm button {
+  padding: 0 1.3rem;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transform: background 0.2s ease-out;
+  text-transform: capitalize;
+}
+
+.NewInteractiveForm button:hover {
+  background: rgb(230, 230, 230);
+}
+
+.NewInteractiveForm input,
+.NewInteractiveForm button {
+  font-family: "Quicksand", sans-serif;
+  height: 3rem;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.NewInteractiveForm span {
+  padding: 0.7rem;
+  border: none;
+  background: rgb(232, 240, 254) !important;
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgb(232, 240, 254);
+  cursor: pointer;
+  transform: background 0.2s ease-out;
+  pointer-events: none;
+}
+
+.lightGrayButton {
+  background-color: rgb(242, 242, 242);
+}
+
+.transparentButton {
+  background: transparent;
+}

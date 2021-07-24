@@ -1,0 +1,53 @@
+.InteractiveList {
+  margin: 4rem auto;
+  max-width: 600px;
+  background: white;
+  color: black;
+}
+
+.redBorder {
+  border: 1px solid red;
+}
+
+.grayBorder {
+  border: 1px solid lightGray;
+}
+
+.InteractiveList ul {
+  list-style: none;
+  border: 1px solid lightgray;
+  min-height: 200px;
+  overflow: auto;
+  max-height: 500px;
+}
+
+.InteractiveList h1 {
+  font-weight: normal;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 1.2rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid lightgray;
+  background-color: rgb(0, 61, 102);
+  color: white;
+}
+
+.InteractiveList h5 {
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4.2rem 0;
+  border: 1px solid lightgray;
+  min-height: 200px;
+  font-size: 18px;
+  color: rgb(140, 140, 140);
+}
+
+.InteractiveList h1 span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
+}

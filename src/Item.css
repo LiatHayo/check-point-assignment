@@ -1,0 +1,108 @@
+.Item {
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  min-height: 2.8rem;
+}
+
+.Item:nth-child(even) {background: white}
+.Item:nth-child(odd) {background: rgb(245, 250, 255)}
+
+.Item-text {
+  position: relative;
+  transition: opacity 0.4s linear;
+}
+
+@keyframes strikeitem {
+  to {
+    width: calc(100% + 1rem);
+  }
+}
+
+.Item-buttons {
+  flex-shrink: 0;
+  padding-left: 0.7em;
+}
+
+.Item-buttons button {
+  border: none;
+  font-size: 1em;
+  margin: 0.4em;
+  background: none;
+  -webkit-appearance: none;
+  color: black;
+}
+
+.Item-edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgb(232, 240, 254);
+}
+
+.Item-edit-form label {
+  min-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.Item-edit-form input {
+  flex-grow: 1;
+  border: none;
+  background: white;
+  padding: 0 1rem;
+  font-size: initial;
+  outline: none;
+}
+
+.Item-edit-form button {
+  padding: 0 1.3rem;
+  border: none;
+  background: rgb(247, 247, 247);
+  color:black;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transform: background 0.2s ease-out;
+}
+
+.Item-edit-form button:hover {
+  background: lightblue;
+}
+
+.Item-edit-form input,
+.Item-edit-form button {
+  font-family: "Quicksand", sans-serif;
+  height: 1.7rem;
+}
+
+.Item:hover .Item-buttons {
+  display: inline;
+}
+
+.Item:hover {
+  background-color: rgb(230, 249, 255);
+  padding: 1.5 0 rem;
+  max-height: 2.8rem;
+}
+
+
+.Item-buttons {
+  display: none;
+}
+
+.Item-edit-form span {
+  background: white;
+  padding: 0.2rem;
+}
+
+.cursorButton {
+  cursor: pointer;
+}
+
+.disableButton {
+  opacity: 0.2;
+}
+
