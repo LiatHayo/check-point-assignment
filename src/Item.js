@@ -9,19 +9,24 @@ function Item({ item, remove, update, readOnly, checkValidation }) {
   const handleClick = (evt) => {
     remove(evt.target.id);
   };
+
   const toggleFrom = () => {
     setIsEditing(!isEditing);
   };
+
   const handleUpdate = (evt) => {
     evt.preventDefault();
-    const isValid = checkValidation(text);
-    if(isValid) {
-      update(item.id, text);
-      toggleFrom();
-    } else {
-      setInputError(true);
+    if(text.length > 0) {
+      const isValid = checkValidation(text);
+      if(isValid) {
+        update(item.id, text);
+        toggleFrom();
+      } else {
+        setInputError(true);
+      }
     }
   };
+
   const handleChange = (evt) => {
     setInputError(false);
     setText(evt.target.value);

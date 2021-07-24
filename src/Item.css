@@ -96,6 +96,7 @@
 .Item-edit-form span {
   background: white;
   padding: 0.2rem;
+  color: red;
 }
 
 .cursorButton {

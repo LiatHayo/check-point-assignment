@@ -19,13 +19,15 @@ function NewInteractiveForm({ createItem, isListEmpty, checkValidation }) {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    const newItem = { id: uuid(), text: userInput.text};
-    const isValid = checkValidation(userInput.text);
-    if(isValid) {
-      createItem(newItem);
-      setUserInput({ text: "" });
-    } else {
-      setInputError(true);
+    if(userInput.text.length > 0) {
+      const newItem = { id: uuid(), text: userInput.text};
+      const isValid = checkValidation(userInput.text);
+      if(isValid) {
+        createItem(newItem);
+        setUserInput({ text: "" });
+      } else {
+        setInputError(true);
+      }
     }
   };
 
